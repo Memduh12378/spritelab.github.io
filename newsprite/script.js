@@ -74,3 +74,11 @@ document.getElementById("clear").addEventListener("click", () => {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   drawGrid();
 });
+
+const spriteNameInput = document.getElementById("spriteName");
+
+spriteNameInput.addEventListener("keydown", e => {
+  if (e.key === "Enter") {
+    spriteNameInput.blur();
+  }
+});
